@@ -3,113 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prabhat Kumar - Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Prabhat Kumar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Prabhat Kumar</h1>
-            <p>New Delhi, 110092</p>
-            <p>(+91) 8102788398</p>
-            <p>Email: Prabhatkumar2379@gmail.com</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#training">Training</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#activities">Activities</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a BCA student at Galgotias University, with a strong interest and aptitude in web development, software development, and data analysis. I have completed multiple certifications in artificial intelligence and cybersecurity fundamentals from IBM, demonstrating my eagerness to learn and expand my skill set in the dynamic field of IT.
-
-                I have gained hands-on experience in web development as an intern at GoMedicos, where I developed an e-commerce website using HTML, CSS, React, JavaScript, MongoDB, and MySQL. I have also completed a frontend development internship from IBM Skill Build, where I enhanced my proficiency in HTML and CSS. In addition, I have showcased my problem-solving and programming skills in various academic projects using C, C++, Java, and data structures. I have maintained a high GPA of above 8.0 throughout the BCA program and received recognition for excellence in web development.
-                
-                I am passionate about creating innovative and user-friendly solutions that can make a positive impact on the society and the environment. I am also committed to continuous learning and improvement, and open to networking with fellow students, professionals, and mentors in the IT industry. I am looking forward to applying my skills and knowledge to the real-world challenges and opportunities in the IT field.</p>
+    
+    <section id="home" class="profile">
+        <img src="profile.jpg" alt="Prabhat Kumar">
+        <h1 >Prabhat Kumar</h1>
+        <p>I am a <span id="typed-text"></span></p>
+        <script>
+            var typed = new Typed("#typed-text", {
+                strings: ["Web Developer", "Problem Solver", "Tech Enthusiast"],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+            });
+        </script>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
+    
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Passionate web developer with expertise in front-end and back-end technologies, problem-solving, and cloud computing.</p>
+        <p>I have experience working on various projects that leverage modern web technologies to build efficient and scalable applications.</p>
+    </section>
+    
+    <section id="skills">
+        <h1>Technical Skills</h1>
+        <ul>
+            <li><i class="fas fa-code"></i> C, C++, Java with DSA (PW Skills Certification)</li>
+            <li><i class="fas fa-database"></i> SQL, MySQL</li>
+            <li><i class="fas fa-laptop-code"></i> Web Development (HTML, CSS, JavaScript, React.js, MongoDB)</li>
+            <li><i class="fas fa-cloud"></i> Cloud Computing (AWS)</li>
+            <li><i class="fas fa-code-branch"></i> Version Control (Git, GitHub)</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+            <h2>Restaurant Management System</h2>
+            <p>Developed a restaurant management system to streamline operations and improve customer service.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+            <h2>Portfolio Website</h2>
+            <p>Designed and built a personal portfolio website to showcase my skills and projects.</p>
+            <a href="#" class="btn">View Project</a>
         </div>
     </section>
-
-    <section id="education" class="section">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>BCA - Galgotias University (2024)</h3>
-                <p>CGPA: 8.64</p>
-            </div>
-            <div class="education-item">
-                <h3>12th Class - SJS, Motihari (CBSE, 2021)</h3>
-                <p>Percentage: 60%</p>
-            </div>
-            <div class="education-item">
-                <h3>10th Class - SJS, Motihari (CBSE, 2018)</h3>
-                <p>Percentage: 62%</p>
-            </div>
-        </div>
+    
+    <section id="certifications">
+        <h1>Certifications & Seminars</h1>
+        <ul>
+            <li>Front End Web Development - IBM Skill Build</li>
+            <li>Career Opportunities with Juniper Network</li>
+            <li>AWS Cloud Practitioner Essentials</li>
+        </ul>
     </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Programming languages: C, C++, Java (with DSA)</li>
-                <li>Database management: SQL, MySQL</li>
-                <li>Web development: HTML, CSS, JavaScript, React.js, MongoDB</li>
-                <li>Software proficiency: Microsoft Office</li>
-                <li>Data analysis tools: Excel (Udemy certification)</li>
-                <li>Cloud computing platforms: AWS</li>
-                <li>Version control systems: Git, GitHub</li>
-            </ul>
-        </div>
+    
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Email: <a href="mailto:Prabhatkumar2379@gmail.com">Prabhatkumar2379@gmail.com</a></p>
+        <p>LinkedIn: <a href="http://www.linkedin.com/in/connectwithmeps">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/PrabhatSinghhh">GitHub Profile</a></p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
-
-    <section id="training" class="section">
-        <div class="container">
-            <h2>Professional Training</h2>
-            <p>Completed an intensive 1-month front-end web development internship program at IBM Skill Build and CSRBOX Academic internship. Achieved certification after completion.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Academic Projects</h2>
-            <p><strong>Title:</strong> Restaurant Management System</p>
-            <p><strong>Objective:</strong> The objective of a Restaurant Management System (RMS) is to streamline and optimize the operations of a restaurant, ensuring efficient management of various tasks and providing an enhanced dining experience for customers.</p>
-            <p><strong>Description:</strong> This project gave me an understanding of how an application works.</p>
-        </div>
-    </section>
-
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2>Seminars/Certifications</h2>
-            <ul>
-                <li>Career Opportunities with Juniper Network</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="activities" class="section">
-        <div class="container">
-            <h2>Co-Curricular Activities</h2>
-            <ul>
-                <li>Member at Galgotias Management Team</li>
-                <li>Member at Galgotias All Booked Club</li>
-            </ul>
-        </div>
-    </section>
-
+    
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Prabhat Kumar</p>
-        </div>
+        <p>&copy; 2024 Prabhat Kumar. All rights reserved.</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
